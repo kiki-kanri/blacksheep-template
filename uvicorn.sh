@@ -13,7 +13,7 @@ if [ ! -z $1 ] && [ $1 = "--dev" ]; then
 else
 	python3.11 -m uvicorn \
 	--log-level $loglevel \
-	--no-access-logs \
+	--no-access-log \
 	--no-date-header \
 	--no-proxy-headers \
 	--no-server-header \
