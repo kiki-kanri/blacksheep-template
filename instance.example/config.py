@@ -9,7 +9,4 @@ DATABASES = {
     }
 }
 
-INSTALLED_APPS = [
-]
-
 SIGNING_KEY = ''

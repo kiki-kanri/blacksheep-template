@@ -1,8 +1,8 @@
-from .controllers.home import Home
+from .controllers.example import Example
 
 
 # Register your controllers here
 
 controllers = [
-    Home
+    Example
 ]

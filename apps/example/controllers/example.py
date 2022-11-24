@@ -1,11 +1,11 @@
 from blacksheep.server.controllers import APIController, get
 
 
-class Home(APIController):
+class Example(APIController):
     @classmethod
     def route(cls):
         return ''
 
     @get('/')
-    async def home():
+    async def hello_world():
         return 'Hello, world!'
