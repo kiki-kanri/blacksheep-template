@@ -13,8 +13,7 @@ def install_apps(blacksheep_app: Application):
     for app in INSTALLED_APPS:
         blacksheep_app.register_controllers(app.controllers)
 
-    for m in MIDDLEWARES:
-        blacksheep_app.middlewares.append(m)
+    blacksheep_app.middlewares += MIDDLEWARES
 
 
 def create_app():
