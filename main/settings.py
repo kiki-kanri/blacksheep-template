@@ -1,12 +1,7 @@
-import apps.example
-
-from apps.example.middlewares.example import example_middleware
-
-
 INSTALLED_APPS = [
-    apps.example
+    'example'
 ]
 
 MIDDLEWARES = [
-    example_middleware
+    'apps.example.middlewares.example.example_middleware'
 ]

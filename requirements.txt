@@ -1,3 +1,4 @@
 blacksheep
 mongoengine
+orjson
 uvicorn

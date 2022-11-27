@@ -1,14 +1,12 @@
 from blacksheep import Request
-from blacksheep.server.controllers import get
-
-from library.controller import BaseAPIController
+from blacksheep.server.controllers import APIController, get
 
 
-class Example(BaseAPIController):
+class Example(APIController):
     @classmethod
     def route(cls):
-        return ''
+        return '/api'
 
     @get('/')
-    async def hello_world(self, request: Request):
-        return 'Hello, world!'
+    async def hello_world(request: Request):
+        return 'Hello World!'
